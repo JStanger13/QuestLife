@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/calendarView">
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:id="@+id/home_king"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_king"
+            android:layout_width="220dp"
+            android:layout_height="220dp" />
+
+
+                <TextView
+                    android:layout_marginRight="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/home_king"
+                    android:layout_centerInParent="true"
+                    android:text="Fragment reserved for Google Calendar API when Implimented"
+                    android:textAlignment="viewStart" />
+
+
+        </RelativeLayout>
+
+        <devs.mulham.horizontalcalendar.HorizontalCalendarView
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimaryDark"
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:textColorSelected="#FFFF"/>
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#d4b483">
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="#75e4dfda">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:elevation="8dp"
+            android:text="Greetings, young hero! Thank heavens thou art here! The Kingdom is under attack by various monsers! The only way they could be stopped is by completing mundane everyday tasks."
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </android.support.v7.widget.CardView>
+    <ImageView
+        android:layout_marginTop="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="8dp"
+        android:src="@drawable/ic_king"/>
+
+
+    <TextView
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/the_king"
+        android:text="Your's truley,"
+        android:textAlignment="textEnd"
+        android:textSize="14sp" />
+    <TextView
+        android:layout_marginRight="10dp"
+
+        android:id="@+id/the_king"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="@font/parisienne"
+        android:text="The King"
+        android:textAlignment="textEnd"
+        android:textSize="24sp" />
+</RelativeLayout>

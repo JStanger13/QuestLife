@@ -1,0 +1,50 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <Button
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/delete_side_quest"
+        android:background="@drawable/ic_x_button_hollow"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:backgroundTint="#c1666b"
+        android:elevation="8dp"
+        />
+
+    <android.support.v7.widget.CardView
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/delete_side_quest"
+        android:id="@+id/side_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/side_quest_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Side Quest Title" />
+
+            <CheckBox
+                android:id="@+id/check_side_quest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <TextView
+        android:layout_below="@id/side_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+</RelativeLayout>
+

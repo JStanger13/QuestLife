@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#c1666b"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/choose_character_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Chooseth Thy Character"
+            android:textSize="30dp" />
+        <RelativeLayout
+            android:layout_below="@id/choose_character_text"
+            android:id="@+id/character_line_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            >
+
+            <Button
+                android:id="@+id/knight"
+                android:layout_marginLeft="50dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/ic_knight"
+                />
+
+            <Button
+                android:id="@+id/wizard"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/ic_wizard"
+                />
+            <Button
+                android:layout_marginRight="50dp"
+                android:id="@+id/boy_elf"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/ic_elf"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/character_line_2"
+            android:layout_below="@id/character_line_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            >
+            <Button
+                android:layout_marginLeft="50dp"
+                android:id="@+id/fairy"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/ic_fairy"
+                />
+
+            <Button
+                android:id="@+id/cyclops"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/ic_cyclops"
+                />
+
+
+            <Button
+                android:layout_marginRight="50dp"
+
+                android:id="@+id/girl_elf"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/ic_girl_elf"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/character_line_3"
+            android:layout_below="@id/character_line_2"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            >
+            <Button
+                android:layout_marginLeft="50dp"
+                android:id="@+id/viking"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/ic_viking"
+                />
+
+            <Button
+                android:id="@+id/princess"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/ic_princess"
+                />
+
+            <Button
+                android:layout_marginRight="50dp"
+
+                android:id="@+id/vampire"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/ic_vampire"
+                />
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_below="@id/character_line_3"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/character_relative_layout"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorAccent">
+
+
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/player_avatar"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                />
+
+            <LinearLayout
+                android:id="@+id/name_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toRightOf="@id/player_avatar">
+
+                <TextView
+                    android:id="@+id/avatar_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:layout_toRightOf="@+id/player_avatar"
+                    android:textColor="#ffffff"
+                    />
+                <EditText
+                    android:id="@+id/create_user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="What is thy name?"
+
+                    android:backgroundTint="@android:color/holo_blue_bright"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#a4f2e6e6"
+                    />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

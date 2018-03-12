@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:id="@+id/no_main_quests_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <TextView
+
+        android:id="@+id/main_quests_empty_1"
+        android:text="Press"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <ImageView
+        android:id="@+id/quill_image"
+        android:layout_toRightOf="@id/main_quests_empty_1"
+        android:background="@drawable/ic_quill"
+        android:layout_marginLeft="5dp"
+        android:layout_width="20dp"
+        android:layout_height="20dp" />
+        <TextView
+
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/quill_image"
+            android:id="@+id/main_quests_empty_2"
+            android:text="to add a new quest!"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/add_main_quest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="20dp"
+        app:fabSize="normal"
+        android:src="@drawable/ic_quill"
+        android:elevation="8dp"
+        />
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/main_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        />
+</RelativeLayout>

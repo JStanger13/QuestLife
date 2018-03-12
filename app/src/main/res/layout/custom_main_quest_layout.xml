@@ -1,0 +1,153 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical">
+    <android.support.v7.widget.CardView
+        android:id="@+id/main_quest_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="8dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/delete_main_quest"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="bottom|end"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/ic_x_button_hollow"
+                android:backgroundTint="#c1666b"
+                android:elevation="8dp"
+                android:layout_marginBottom="10dp"
+                />
+            <ImageView
+                android:layout_below="@id/delete_main_quest"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/boss"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+
+                />
+
+
+            <LinearLayout
+                android:layout_toRightOf="@id/boss"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/relative_layout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageButton
+                        android:layout_toLeftOf="@id/calendar_button"
+                        android:id="@+id/clock_button"
+                        android:background="@drawable/ic_time"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp" />
+                    <ImageButton
+                        android:layout_toLeftOf="@id/go_to_side_quests"
+                        android:id="@+id/calendar_button"
+                        android:background="@drawable/ic_calendar"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp" />
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/main_quest-title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="16dp"
+                        android:textStyle="bold"
+                        android:text="Quest Title"
+                        android:maxLength="27"
+                        />
+
+
+                    <TextView
+                        android:layout_below="@id/main_quest-title"
+                        android:id="@+id/main_frag_quest_size"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:text="size"/>
+                    <LinearLayout
+                        android:id="@+id/linear"
+                        android:layout_below="@id/main_frag_quest_size"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                    <ProgressBar
+                        android:id="@+id/main_quest_progress_bar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:indeterminate="false"
+                        android:maxHeight="10dip"
+                        android:minHeight="10dip"
+                        android:progress="0" />
+
+                        <TextView
+                            android:id="@+id/main_quest_completion_percent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="10dp"
+                            android:text="%" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/main_quest_date"
+                        android:layout_below="@id/linear"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        />
+                    <TextView
+                        android:id="@+id/main_quest_time"
+                        android:layout_below="@id/main_quest_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        />
+
+                    <ImageButton
+                        android:id="@+id/go_to_side_quests"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/ic_arrow_right"
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        />
+</LinearLayout>
