@@ -11,13 +11,13 @@
 There is a detail activity that shows all shows from a network, and another detail activity that displays each episode of that series.
 </p>
 
-![Alt text](app_images/stream_guide_main_pic.jpg)
+![Alt text](screenshot_1.jpg)
 
 <p>
 Users can also search by show title in the Search Activity.
 </p>
 
-![Alt text](app_images/search_image.png)
+![Alt text](screenshot_2.jpg)
 
 
 
