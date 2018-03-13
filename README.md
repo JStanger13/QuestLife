@@ -11,7 +11,7 @@
 There is a detail activity that shows all shows from a network, and another detail activity that displays each episode of that series.
 </p>
 
-![Alt text](app_images/QuestLifeStoreImage.jpg)
+![Alt text](app_images/QuestLifeStoreImage_smaller.jpg)
 
 
 
