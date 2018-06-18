@@ -9,9 +9,7 @@
 
 
 
-![Alt text](app_images/image1.png)
-![Alt text](app_images/image2.png)
-![Alt text](app_images/image3.png)
+![Alt text](app_images/QuestLifeStoreImage_smaller.jpg)
 
 
 
