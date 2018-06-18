@@ -9,9 +9,9 @@
 
 
 
-![Alt text](app_images/image1.png.jpg)
-![Alt text](app_images/image2.png.jpg)
-![Alt text](app_images/image3.png.jpg)
+![Alt text](app_images/image1.png)
+![Alt text](app_images/image2.png)
+![Alt text](app_images/image3.png)
 
 
 
